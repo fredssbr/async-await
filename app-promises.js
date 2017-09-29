@@ -55,6 +55,7 @@ const getStatus = (userId) => {
 };
 
 /*
+
 Async functions always returns a promise (it resolves what you return into a promise)
 It's equivalent to: 
 
@@ -72,6 +73,7 @@ You can only use await inside an async function. There is no top level (global) 
 for await, like this:
 
     const status = await getStatusAlt(2);
+
 */
 const getStatusAlt = async(userId) => {
     const user = await getUser(userId);
